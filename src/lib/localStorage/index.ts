@@ -1,5 +1,10 @@
+import { isNative, isWeb } from '../platformHelpers';
+
 export function setLocalStorageItem(key: string, value: string): void {
-  localStorage.setItem(key, value);
+  if (isNative()) {
+  } else if (isWeb()) {
+    localStorage.setItem(key, value);
+  }
 }
 
 export function getLocalStorageItem(key: string): string | null {
