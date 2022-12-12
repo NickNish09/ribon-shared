@@ -1,18 +1,16 @@
 import impactApi from "services/api/impactApi";
-import { useCurrentUser } from "contexts/currentUserContext";
 import { useApi } from "hooks/useApi";
 import Impact from "types/entities/Impact";
 
-function useImpact() {
-  const { currentUser } = useCurrentUser();
+function useImpact(userId: number | undefined) {
   const { data: userImpact } = useApi<Impact[]>({
     key: "impacts",
     fetchMethod: () => {
-      const id = currentUser?.id || null;
+      const id = userId || null;
       return impactApi.getImpact(id);
     },
     options: {
-      enabled: !!currentUser?.id,
+      enabled: !!userId,
     },
   });
 
