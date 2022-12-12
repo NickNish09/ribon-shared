@@ -18,7 +18,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "src",
+    "sourceRoot": "/"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
