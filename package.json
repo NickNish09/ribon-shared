@@ -31,7 +31,8 @@
     "moduleNameMapper": {
       "axios": "axios/dist/node/axios.cjs"
     },
-    "transformIgnorePatterns": ["node_modules/(?!camelcase-keys)", "node_modules/(?!snakecase-keys)"]
+    "transformIgnorePatterns": ["node_modules/(?!camelcase-keys)", "node_modules/(?!snakecase-keys)"],
+    "moduleDirectories": ["node_modules", "src"]
   },
   "peerDependencies": {
     "react": ">= 17.0.2",
