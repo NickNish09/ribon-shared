@@ -1,7 +1,7 @@
-import { useApi } from "hooks/useApi";
-import usersApi from "services/api/usersApi";
-import { CanDonate } from "types/apiResponses/CanDonate";
-import { emptyRequest } from "services/api";
+import { useApi } from 'hooks/useApi';
+import usersApi from 'services/api/usersApi';
+import CanDonate from 'types/apiResponses/CanDonate';
+import { emptyRequest } from 'services/api';
 
 function useCanDonate(integrationId: number | string | null) {
   const {
@@ -9,7 +9,7 @@ function useCanDonate(integrationId: number | string | null) {
     isLoading,
     refetch,
   } = useApi<CanDonate>({
-    key: "canDonate",
+    key: 'canDonate',
     fetchMethod: () => {
       if (integrationId) return usersApi.postCanDonate(integrationId);
 
