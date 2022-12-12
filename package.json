@@ -40,8 +40,8 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
-    "@testing-library/user-event": "^13.2.1",
     "@testing-library/react-hooks": "^3.4.1",
+    "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^26.0.7",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
@@ -54,6 +54,7 @@
     "babel-runtime": "^6.26.0",
     "eslint-plugin-react-hooks": "^4.0.8",
     "jest": "^26.1.0",
+    "prettier": "^2.8.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-test-renderer": "^16.13.1",
