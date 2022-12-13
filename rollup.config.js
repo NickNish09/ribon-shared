@@ -1,8 +1,8 @@
-import sass from 'rollup-plugin-sass'
-import { uglify } from 'rollup-plugin-uglify'
-import typescript from 'rollup-plugin-typescript2'
+import sass from 'rollup-plugin-sass';
+import { uglify } from 'rollup-plugin-uglify';
+import typescript from 'rollup-plugin-typescript2';
 
-import pkg from './package.json'
+import pkg from './package.json';
 
 export default {
   input: 'src/index.ts',
@@ -16,5 +16,18 @@ export default {
     },
   ],
   plugins: [sass({ insert: true }), typescript(), uglify()],
-  external: ['react', 'react-dom'],
-}
+  external: [
+    'react',
+    'react-dom',
+    'react-query',
+    'react-router-dom',
+    'styled-components',
+    'styled-components/native',
+    'axios',
+    'camelcase-keys',
+    'snakecase-keys',
+    '@apollo/client',
+    'cross-fetch',
+    'ethers',
+  ],
+};
