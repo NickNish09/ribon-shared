@@ -2,13 +2,16 @@ import sass from 'rollup-plugin-sass';
 import { uglify } from 'rollup-plugin-uglify';
 import typescript from 'rollup-plugin-typescript2';
 
-import pkg from './package.json';
-
 export default {
-  input: 'src/index.ts',
+  input: {
+    index: 'src/index.ts',
+    hooks: 'src/hooks/index.ts',
+    styles: 'src/styles/index.ts',
+    services: 'src/services/index.ts',
+  },
   output: [
     {
-      file: pkg.main,
+      dir: 'dist',
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
