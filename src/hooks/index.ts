@@ -7,6 +7,7 @@ import useCryptoTransaction from './apiHooks/useCryptoTransaction';
 import useDonations from './apiHooks/useDonations';
 import useImpact from './apiHooks/useImpact';
 import useIntegration from './apiHooks/useIntegration';
+import useIntegrationImpact from './apiHooks/useIntegrationImpact';
 import useNonProfitImpact from './apiHooks/useNonProfitImpact';
 import useNonProfits from './apiHooks/useNonProfits';
 import useOffers from './apiHooks/useOffers';
@@ -25,6 +26,7 @@ export {
   useDonations,
   useImpact,
   useIntegration,
+  useIntegrationImpact,
   useNonProfitImpact,
   useNonProfits,
   useOffers,
