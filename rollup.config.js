@@ -8,6 +8,7 @@ export default {
     hooks: 'src/hooks/index.ts',
     styles: 'src/styles/index.ts',
     services: 'src/services/index.ts',
+    types: 'src/types/index.ts',
   },
   output: [
     {

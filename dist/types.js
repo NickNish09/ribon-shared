@@ -1,0 +1,2 @@
+function ___$insertStyle(e){if(e&&"undefined"!=typeof window){var t=document.createElement("style");return t.setAttribute("type","text/css"),t.innerHTML=e,document.head.appendChild(t),e}}Object.defineProperty(exports,"__esModule",{value:!0}),function(e){e.USD="USD",e.BRL="BRL"}(exports.Currencies||(exports.Currencies={})),function(e){e.PT="pt-BR",e.EN="en-US"}(exports.Languages||(exports.Languages={})),function(e){e.PROCESSING="processing",e.SUCCESS="success",e.FAILED="failed"}(exports.TransactionStatus||(exports.TransactionStatus={}));
+//# sourceMappingURL=types.js.map
