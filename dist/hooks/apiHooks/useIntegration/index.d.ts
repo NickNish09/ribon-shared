@@ -1,4 +1,4 @@
-import Integration from "types/entities/Integration";
+import Integration from 'types/entities/Integration';
 declare function useIntegration(integrationId: number | string | null | undefined): {
     integration: Integration;
     isLoading: boolean;

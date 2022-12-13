@@ -1,10 +1,11 @@
-import { useApi } from "hooks/useApi";
-import integrationsApi from "services/api/integrationsApi";
-import Integration from "types/entities/Integration";
+import { useApi } from 'hooks/useApi';
+import integrationsApi from 'services/api/integrationsApi';
+import Integration from 'types/entities/Integration';
+import { setLocalStorageItem } from 'lib/localStorage';
 
 function useIntegration(integrationId: number | string | null | undefined) {
   if (!integrationId) {
-    localStorage.setItem("integrationName", "undefined");
+    setLocalStorageItem('integrationName', 'undefined');
     return {
       integration: {} as Integration,
       isLoading: true,
@@ -18,7 +19,7 @@ function useIntegration(integrationId: number | string | null | undefined) {
     refetch,
     error,
   } = useApi<Integration>({
-    key: "integration",
+    key: 'integration',
     fetchMethod: () => integrationsApi.getIntegration(integrationId),
     options: {
       enabled: !!integrationId,
@@ -26,11 +27,11 @@ function useIntegration(integrationId: number | string | null | undefined) {
   });
 
   if (error) {
-    localStorage.setItem("integrationName", "error");
+    setLocalStorageItem('integrationName', 'error');
   }
 
   if (integration) {
-    localStorage.setItem("integrationName", integration.name);
+    setLocalStorageItem('integrationName', integration.name);
   }
 
   return { integration, isLoading, refetch, error };

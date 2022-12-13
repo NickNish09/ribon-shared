@@ -2,15 +2,26 @@ import { isNative, isWeb } from '../platformHelpers';
 
 export function setLocalStorageItem(key: string, value: string): void {
   if (isNative()) {
+    return;
   } else if (isWeb()) {
     localStorage.setItem(key, value);
   }
 }
 
 export function getLocalStorageItem(key: string): string | null {
-  return localStorage.getItem(key);
+  if (isNative()) {
+    return null;
+  } else if (isWeb()) {
+    return localStorage.getItem(key);
+  }
+
+  return null;
 }
 
 export function removeLocalStorageItem(key: string) {
-  localStorage.removeItem(key);
+  if (isNative()) {
+    return;
+  } else if (isWeb()) {
+    localStorage.removeItem(key);
+  }
 }
