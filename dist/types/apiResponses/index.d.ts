@@ -5,4 +5,5 @@ import NonProfitImpact from './NonProfitImpact';
 import PoolBalance from './PoolBalance';
 import PromoterCardGiving from './PromoterCardGiving';
 import PromoterDonation from './PromoterDonation';
-export { CanDonate, CardFees, DonationsCount, NonProfitImpact, PoolBalance, PromoterCardGiving, PromoterDonation, };
+import IntegrationImpact from './IntegrationImpact';
+export { CanDonate, CardFees, DonationsCount, NonProfitImpact, PoolBalance, PromoterCardGiving, PromoterDonation, IntegrationImpact, };
