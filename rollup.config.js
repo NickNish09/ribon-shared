@@ -9,6 +9,8 @@ export default {
     styles: 'src/styles/index.ts',
     services: 'src/services/index.ts',
     types: 'src/types/index.ts',
+    utils: 'src/utils/index.ts',
+    lib: 'src/lib/index.ts',
   },
   output: [
     {
