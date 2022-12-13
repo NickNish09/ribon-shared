@@ -9,8 +9,10 @@ const integrationsApi = {
 
   getIntegrationImpact: (
     id: number | string,
+    startDate: string,
+    endDate: string,
   ): Promise<AxiosResponse<IntegrationImpact>> =>
-    apiGet(`integrations/${id}/impacts`),
+    apiGet(`integrations/${id}/impacts?start_date=${startDate}&end_date=${endDate}`),
 };
 
 export default integrationsApi;

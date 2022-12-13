@@ -2,7 +2,11 @@ import { useApi } from 'hooks/useApi';
 import integrationsApi from 'services/api/integrationsApi';
 import IntegrationImpact from 'types/apiResponses/IntegrationImpact';
 
-function useIntegrationImpact(integrationId: number | string | null | undefined) {
+function useIntegrationImpact(
+  integrationId: number | string | null | undefined,
+  startDate: string,
+  endDate: string,
+) {
   if (!integrationId) {
     return {
       integrationImpact: {} as IntegrationImpact,
@@ -18,7 +22,8 @@ function useIntegrationImpact(integrationId: number | string | null | undefined)
     error,
   } = useApi<IntegrationImpact>({
     key: 'integrationImpact',
-    fetchMethod: () => integrationsApi.getIntegrationImpact(integrationId),
+    fetchMethod: () =>
+      integrationsApi.getIntegrationImpact(integrationId, startDate, endDate),
     options: {
       enabled: !!integrationId,
     },

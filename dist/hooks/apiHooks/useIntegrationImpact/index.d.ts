@@ -1,5 +1,5 @@
 import IntegrationImpact from 'types/apiResponses/IntegrationImpact';
-declare function useIntegrationImpact(integrationId: number | string | null | undefined): {
+declare function useIntegrationImpact(integrationId: number | string | null | undefined, startDate: string, endDate: string): {
     integrationImpact: IntegrationImpact;
     isLoading: boolean;
     refetch: () => void;

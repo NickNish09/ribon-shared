@@ -3,6 +3,6 @@ import Integration from 'types/entities/Integration';
 import IntegrationImpact from 'types/apiResponses/IntegrationImpact';
 declare const integrationsApi: {
     getIntegration: (id: number | string) => Promise<AxiosResponse<Integration>>;
-    getIntegrationImpact: (id: number | string) => Promise<AxiosResponse<IntegrationImpact>>;
+    getIntegrationImpact: (id: number | string, startDate: string, endDate: string) => Promise<AxiosResponse<IntegrationImpact>>;
 };
 export default integrationsApi;
