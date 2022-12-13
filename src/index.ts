@@ -1,7 +1,4 @@
 import { decode, encode } from 'base-64';
-export * from './hooks';
-export * from './services';
-
 if (!global.btoa) {
   global.btoa = encode;
 }
@@ -9,3 +6,6 @@ if (!global.btoa) {
 if (!global.atob) {
   global.atob = decode;
 }
+
+export * from './hooks';
+export * from './services';
