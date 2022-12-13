@@ -3,7 +3,6 @@ import QueryClientComponent from './useApi/queryClient';
 import useCanDonate from './apiHooks/useCanDonate';
 import useCardGivingFees from './apiHooks/useCardGivingFees';
 import useCauses from './apiHooks/useCauses';
-import useContractBalance from './apiHooks/useContractBalance';
 import useCryptoTransaction from './apiHooks/useCryptoTransaction';
 import useDonations from './apiHooks/useDonations';
 import useImpact from './apiHooks/useImpact';
@@ -22,7 +21,6 @@ export {
   useCanDonate,
   useCardGivingFees,
   useCauses,
-  useContractBalance,
   useCryptoTransaction,
   useDonations,
   useImpact,

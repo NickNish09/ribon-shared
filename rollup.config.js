@@ -28,6 +28,5 @@ export default {
     'snakecase-keys',
     '@apollo/client',
     'cross-fetch',
-    'ethers',
   ],
 };
