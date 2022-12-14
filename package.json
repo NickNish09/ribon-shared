@@ -13,7 +13,8 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src/**/*.ts src/**/*.tsx && prettier --check src/**/*.ts src/**/*.tsx"
   },
   "jest": {
     "transform": {
@@ -52,7 +53,15 @@
     "axios-mock-adapter": "^1.21.2",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
     "jest": "^26.1.0",
     "prettier": "^2.8.1",
     "react": "^16.12.0",

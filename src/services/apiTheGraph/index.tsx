@@ -1,6 +1,6 @@
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
-import { THE_GRAPH_API } from 'utils/constants';
-import fetch from 'cross-fetch';
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+import { THE_GRAPH_API } from "utils/constants";
+import fetch from "cross-fetch";
 
 const APIURL = THE_GRAPH_API;
 

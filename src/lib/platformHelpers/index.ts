@@ -1,7 +1,7 @@
 export function isNative() {
-  return typeof navigator !== 'undefined' && navigator.product === 'ReactNative';
+  return typeof navigator !== "undefined" && navigator.product === "ReactNative";
 }
 
 export function isWeb() {
-  return typeof document !== 'undefined';
+  return typeof document !== "undefined";
 }
