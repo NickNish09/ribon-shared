@@ -1,6 +1,6 @@
-import { useApi } from 'hooks/useApi';
-import integrationsApi from 'services/api/integrationsApi';
-import IntegrationImpact from 'types/apiResponses/IntegrationImpact';
+import { useApi } from "hooks/useApi";
+import integrationsApi from "services/api/integrationsApi";
+import IntegrationImpact from "types/apiResponses/IntegrationImpact";
 
 function useIntegrationImpact(
   integrationId: number | string | null | undefined,
@@ -21,7 +21,7 @@ function useIntegrationImpact(
     refetch,
     error,
   } = useApi<IntegrationImpact>({
-    key: 'integrationImpact',
+    key: "integrationImpact",
     fetchMethod: () =>
       integrationsApi.getIntegrationImpact(integrationId, startDate, endDate),
     options: {

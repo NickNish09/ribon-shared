@@ -1,4 +1,4 @@
-import { NonProfit } from '../entities';
+import { NonProfit } from "../entities";
 
 export default interface IntegrationImpact {
   totalDonations: number;
