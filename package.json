@@ -1,10 +1,10 @@
 {
-  "name": "@ribon/shared",
-  "version": "1.0.1",
+  "name": "@nicknish09/ribon-shared",
+  "version": "1.0.2",
   "description": "Shared library for Ribon",
   "author": "ribon",
   "license": "Apache-2.0",
-  "repository": "RibonDAO/core",
+  "repository": "NickNish09/ribon-shared",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
